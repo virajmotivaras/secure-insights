@@ -28,6 +28,8 @@ future extensibility
 
 Project boundaries matter because they reduce coupling, improve clarity, and make the system easier to evolve safely.
 
+Project boundaries matter because they separate responsibilities and reduce unnecessary coupling between different parts of a system. When boundaries are clear, each part of the codebase has a defined purpose, which improves readability, maintainability, testability, and extensibility. For example, API logic, analytics scripts, documentation, and DSA practice should not be mixed together because they solve different problems. Good boundaries make the system easier to understand, safer to modify, and more scalable over time.
+
 
 **What is the difference between a solution, a project, and a package/module?**
 A solution contains all the solution related files
@@ -85,6 +87,8 @@ A solution groups projects.
 A project is a buildable application or library.
 A package or module organizes code inside or across projects
 
+A solution is the top-level container in .NET that groups related projects together. A project is a buildable unit, such as a web API, class library, test application, or console application, usually defined by a .csproj file. A package/module is a smaller organizational unit used to group related code. In Python, a module is typically a single .py file and a package is a folder of related modules. In general, a solution contains projects, and projects contain organized code units such as modules, packages, namespaces, or classes.
+
 **Why is scanning an array O(n)?**
 The complexity increases with the size of the array
 
@@ -132,3 +136,5 @@ Because it uses only a fixed number of additional variables, regardless of input
 
 Why it is not O(1) time:
 Because the amount of work depends on the size of the array. To guarantee correctness, the algorithm must examine all elements in the worst case, and in fact even in the best case.
+
+Scanning an array is O(n) because, in the general case, each element may need to be inspected once. If the array has n elements, the amount of work grows linearly with n. Therefore, the time complexity is O(n). It is not O(1) because the work depends on the input size, and it is not O(n^2) because only a single linear pass is required.
