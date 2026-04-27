@@ -46,10 +46,82 @@ Architecture notes, ADR-style reasoning, weekly notes.
 dsa
 
 Practice problems in C# and maybe some in Python.
+Big O
+O(1) — constant time
+
+Same amount of work regardless of input size.
+
+Example:
+accessing an array element by index.
+
+O(n) — linear time
+
+Work grows in proportion to input size.
+
+Example:
+scan an array to find a value.
+
+O(n^2) — quadratic time
+
+Often appears with nested loops.
+for (int i = 0; i < n; i++)
+{
+    for (int j = 0; j < n; j++)
+    {
+        // work
+    }
+}
+If n doubles, work becomes about four times larger.
+
+O(log n) — logarithmic time
+
+Work grows slowly as input grows.
+
+Typical example:
+binary search on a sorted array.
+
+Each step cuts the remaining search space in half.
+
+
+What is an array conceptually?
+
+An array is a contiguous collection of elements stored in order.
+
+Important characteristics:
+
+ordered
+index-based access
+efficient reads by index
+fixed-size in many low-level models
+
+In C#, arrays are real arrays:
+int[] numbers = { 10, 20, 30, 40 };
+
+In Python, list is more flexible than a classical fixed-size array, but for interview thinking, it often plays the “array-like sequence” role.
+
+numbers = [10, 20, 30, 40]
+
+Why arrays matter so much
+
+Because many problems are disguised array problems:
+
+find duplicates
+find maximum
+move elements
+merge ranges
+compute prefix values
+two-pointer problems
+sliding window problems
+
+If arrays are weak, DSA feels hard.
+If arrays are strong, half of DSA becomes manageable.
+
+
 
 patterns
 
 Small pattern examples, tied back to the actual project.
+
 
 sql
 
