@@ -1,4 +1,6 @@
-﻿namespace SecureInsights.Domain
+﻿using SecureInsights.Common;
+
+namespace SecureInsights.Domain
 {
     public class Note
     {
@@ -12,13 +14,13 @@
 
         public Note(string title, string content, string category, Guid createdByUserId)
         {
-            if (string.IsNullOrWhiteSpace(title))
+            if (title.IsNullOrWhiteSpace())
                 throw new ArgumentException("Title cannot be empty.");
 
-            if (string.IsNullOrWhiteSpace(content))
+            if (content.IsNullOrWhiteSpace())
                 throw new ArgumentException("Content cannot be empty.");
 
-            if (string.IsNullOrWhiteSpace(category))
+            if (category.IsNullOrWhiteSpace())
                 throw new ArgumentException("Category cannot be empty.");
 
             Id = Guid.NewGuid();
@@ -32,13 +34,13 @@
 
         public void Update(string title, string content, string category)
         {
-            if (string.IsNullOrWhiteSpace(title))
+            if (title.IsNullOrWhiteSpace())
                 throw new ArgumentException("Title cannot be empty.");
 
-            if (string.IsNullOrWhiteSpace(content))
+            if (content.IsNullOrWhiteSpace())
                 throw new ArgumentException("Content cannot be empty.");
 
-            if (string.IsNullOrWhiteSpace(category))
+            if (category.IsNullOrWhiteSpace())
                 throw new ArgumentException("Category cannot be empty.");
 
             Title = title;

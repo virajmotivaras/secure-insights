@@ -1,4 +1,6 @@
-﻿namespace SecureInsights.Domain
+﻿using SecureInsights.Common;
+
+namespace SecureInsights.Domain
 {
     public class User
     {
@@ -10,13 +12,13 @@
 
         public User(string name, string email, string role)
         {
-            if (string.IsNullOrWhiteSpace(name))
+            if (name.IsNullOrWhiteSpace())
                 throw new ArgumentException("Name cannot be empty.");
 
-            if (string.IsNullOrWhiteSpace(email))
+            if (email.IsNullOrWhiteSpace())
                 throw new ArgumentException("Email cannot be empty.");
 
-            if (string.IsNullOrWhiteSpace(role))
+            if (role.IsNullOrWhiteSpace())
                 throw new ArgumentException("Role cannot be empty.");
 
             Id = Guid.NewGuid();
