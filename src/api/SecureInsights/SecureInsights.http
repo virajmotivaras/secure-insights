@@ -1,0 +1,6 @@
+@SecureInsights_HostAddress = http://localhost:5285
+
+GET {{SecureInsights_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

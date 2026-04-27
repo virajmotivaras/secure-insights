@@ -1,0 +1,91 @@
+# -----------------------------
+# .NET / C# (SDK-style projects)
+# -----------------------------
+bin/
+obj/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+AnyCPU/
+
+# Build logs and outputs
+*.log
+*.tlog
+*.tmp
+*.temp
+
+# Visual Studio / Rider / VS Code user files
+.vs/
+.vscode/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.rsuser
+_ReSharper*/
+*.DotSettings.user
+
+# NuGet packages / restore artifacts
+packages/
+*.nupkg
+*.snupkg
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Test and coverage outputs
+TestResults/
+*.trx
+coverage/
+*.coverage
+*.coveragexml
+
+# -----------------------------
+# Python
+# -----------------------------
+# Byte-compiled / optimized files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Tool caches and metadata
+.python-version
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+.pyre/
+.hypothesis/
+.tox/
+.nox/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Coverage and reports
+.coverage
+.coverage.*
+htmlcov/
+
+# Type checkers / language servers
+.dmypy.json
+dmypy.json
+.pytype/
+
+# Local environment files
+.env
+.env.*
+
