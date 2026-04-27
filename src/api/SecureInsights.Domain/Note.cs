@@ -43,6 +43,11 @@ namespace SecureInsights.Domain
             if (category.IsNullOrWhiteSpace())
                 throw new ArgumentException("Category cannot be empty.");
 
+            if (this.Title == title && this.Content == content && this.Category == category)
+            { 
+                throw new Exception("No changes detected. Update operation requires at least one field to be modified.");
+            }
+
             Title = title;
             Content = content;
             Category = category;
