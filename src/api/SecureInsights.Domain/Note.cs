@@ -47,4 +47,6 @@
             UpdatedAtUtc = DateTime.UtcNow;
         }
     }
+
+    public record CreateNoteRequest(string Title, string Content, string Category);
 }
