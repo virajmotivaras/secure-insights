@@ -1,3 +1,4 @@
 <Solution>
+  <Project Path="SecureInsights.Domain/SecureInsights.Domain.csproj" Id="b7adcfda-fc09-46ce-843a-b7257f5a5c67" />
   <Project Path="SecureInsights/SecureInsights.csproj" />
 </Solution>
