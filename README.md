@@ -130,3 +130,33 @@ Views, scripts, analytics queries.
 tests
 
 If not co-located, can contain cross-project test assets.
+
+What is a hash map?
+
+A hash map stores key-value pairs.
+
+Examples:
+
+"user123" -> user object
+"architecture" -> 17
+"banana" -> 3
+
+In C#:
+
+Dictionary<TKey, TValue>
+
+In Python:
+
+dict
+
+Hash maps are among the most important DSA tools in practice.
+
+Why are hash maps powerful?
+
+Because they usually allow:
+
+insert in average O(1)
+lookup in average O(1)
+update in average O(1)
+
+That is why they are used constantly.
